@@ -20,7 +20,7 @@
     .navbar-brand{
       font-family: "IM Fell English SC", serif;
       font-weight: 500;
-      font-size: 50px;
+      font-size: 40px;
       transition: 0.6s ease-out;
     }
     .navbar-nav a{
@@ -52,14 +52,7 @@
     }
     
 
-    body {
-      background: #fff;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: #000;
-      margin: 0;
-      padding: 0;
-    }
+ 
 
     
 
