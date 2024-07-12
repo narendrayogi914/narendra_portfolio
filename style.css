@@ -690,9 +690,10 @@
 
 
     }
-    .contact-list  li a{
-        margin-left: 5px;
-        color: aliceblue;
+    .contact-list   a{
+        display: inherit;
+        text-decoration: none;color: #fff;
+
     }
     .contact-list li a:hover {
         transform: scale(1.01) translateY(-5px);
@@ -767,7 +768,124 @@
         0 0 25px #0ef;
 
     }
-    
+    /* Existing CSS remains the same */
+
+/* Add these media queries for mobile view */
+@media only screen and (max-width: 768px) {
+    .contact {
+       grid-template-columns: 1fr;
+       padding-left: 20px;
+       padding-top: 30px;
+     }
+   
+    .contact-text h2 span {
+       font-size: 18px;
+     }
+   
+    .contact-text h4 {
+       margin: 10px 0;
+       font-size: 30px;
+     }
+   
+    .contact-text p {
+       font-size: 16px;
+       line-height: 24px;
+     }
+   
+    .contact-list {
+       margin-bottom: 2rem;
+     }
+   
+    .contact-list li {
+       margin-bottom: 5px;
+     }
+   
+    .contact-list i {
+       font-size: 18px;
+     }
+   
+    .contact-icons {
+       flex-direction: column;
+       align-items: center;
+     }
+   
+    .contact-icons i {
+       margin: 15px 0;
+     }
+     .contact-form{
+        padding: 20px;
+     }
+   
+    .contact-form form {
+       width: 100%;
+     }
+   
+    .contact-form form input, textarea {
+       width: 100%;
+       padding: 8px;
+       font-size: 0.9rem;
+     }
+   
+    .contact-form textarea {
+       height: 150px;
+     }
+   
+    .contact-form form.send {
+       padding: 10px 20px;
+       font-size: 14px;
+     }
+   }
+   
+   @media only screen and (max-width: 480px) {
+    .contact {
+       padding-left: 20px;
+       padding-top: 20px;
+     }
+   
+    .contact-text h2 span {
+       font-size: 16px;
+     }
+   
+    .contact-text h4 {
+       margin: 8px 0;
+       font-size: 30px;
+     }
+   
+    .contact-text p {
+        padding: 10px;
+       font-size: 14px;
+       line-height: 20px;
+     }
+   
+    .contact-list li {
+       margin-bottom: 3px;
+     }
+   
+    .contact-list i {
+       font-size: 16px;
+     }
+   
+    .contact-icons i {
+       margin: 10px 0;
+     }
+     .contact-form{
+        width: 100%;
+        padding: 20px;
+     }
+    .contact-form form input, textarea {
+       padding: 6px;
+       font-size: 0.8rem;
+     }
+   
+    .contact-form textarea {
+       height: 100px;
+     }
+   
+    .contact-form form.send {
+       padding: 8px 15px;
+       font-size: 12px;
+     }
+   }
     @keyframes showText {
         100%{
             opacity: 1;
