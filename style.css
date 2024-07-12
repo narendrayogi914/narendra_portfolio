@@ -9,8 +9,9 @@
       
     }
     
-    body {
+    html, body {
         color: #ededed;
+        overflow-x: hidden
     }
 
     .header {
@@ -19,7 +20,7 @@
         left: 0;
         width: 100%;
         padding: 20px 10%;
-        background: transparent;
+        background: #081b29;
         display: flex;
         justify-content: space-between;
         align-items: center;
