@@ -5,10 +5,7 @@
         padding: 0;
         box-sizing: border-box;
         font-family: 'poppins' sans-serif;
-        
-        
-        
-        background-color: #081b29;
+      
     }
     
     body {
@@ -315,6 +312,7 @@
 
     }
     section{
+        background-color: #081b29;
         display: flex;
         flex-wrap: wrap;
     }
@@ -552,6 +550,72 @@
         animation: showText 0.5s 1s linear forwards;
         opacity: 0;
 
+    }
+    .main_text{
+        padding-top: 130px;
+        margin-top: 200px;
+
+    }
+    .main_text h2{
+        font-size: 60px;
+        line-height: 1;
+        text-align:center;
+    }
+    .main_text h2 span{
+        color: #0ef;
+    }
+    .portfolio-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(359px , auto));
+
+    }
+    .row{
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .row img{
+        width: 100%;
+        border-radius: 8px;
+        display: block;
+        transition: transform 0.5s;
+        
+    }
+    .layer{
+        width: 100%;
+        height: 0;
+        background-color: linear-gradient(rgba(0,0,0,0.1),#0ef);
+        position: absolute;
+        border-radius: 8px;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 40px;
+        transition: height 0.5s;
+
+
+    }
+    .layer h5{
+        color: #000;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+
+    }
+    .layer p{
+        color: #000;
+        font-size: 1rem;
+        line-height: 1.8rem;
+
+    }
+    .layer i{
+        color: #fff;
     }
     @keyframes showText {
         100%{
